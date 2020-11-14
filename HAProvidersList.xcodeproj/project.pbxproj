@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		AB5BCF0725607F3900E7624F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF0625607F3900E7624F /* AppDelegate.swift */; };
 		AB5BCF0925607F3900E7624F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF0825607F3900E7624F /* SceneDelegate.swift */; };
-		AB5BCF0B25607F3900E7624F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF0A25607F3900E7624F /* ViewController.swift */; };
+		AB5BCF0B25607F3900E7624F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF0A25607F3900E7624F /* ListViewController.swift */; };
 		AB5BCF0E25607F3900E7624F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5BCF0C25607F3900E7624F /* Main.storyboard */; };
 		AB5BCF1025607F3B00E7624F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5BCF0F25607F3B00E7624F /* Assets.xcassets */; };
 		AB5BCF1325607F3B00E7624F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5BCF1125607F3B00E7624F /* LaunchScreen.storyboard */; };
 		AB5BCF1E25607F3C00E7624F /* HAProvidersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF1D25607F3C00E7624F /* HAProvidersListTests.swift */; };
-		AB5BCF2925607F3C00E7624F /* HAProvidersListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF2825607F3C00E7624F /* HAProvidersListUITests.swift */; };
+		AB5BCF3A2560802B00E7624F /* pro_data.json in Resources */ = {isa = PBXBuildFile; fileRef = AB5BCF392560802B00E7624F /* pro_data.json */; };
+		AB5BCF402560807E00E7624F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF3F2560807E00E7624F /* DetailViewController.swift */; };
+		AB5BCF462560809900E7624F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF452560809900E7624F /* ListPresenter.swift */; };
+		AB5BCF4B256080A800E7624F /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF4A256080A800E7624F /* DetailPresenter.swift */; };
+		AB5BCF50256080D400E7624F /* ProvidersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF4F256080D400E7624F /* ProvidersInteractor.swift */; };
+		AB5BCF56256080EF00E7624F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BCF55256080EF00E7624F /* Router.swift */; };
+		AB7699E425608648009BBB7C /* ProResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699E325608648009BBB7C /* ProResponse.swift */; };
+		AB7699E9256087BD009BBB7C /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699E8256087BD009BBB7C /* JSONLoader.swift */; };
+		AB7699EE25608DB2009BBB7C /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699ED25608DB2009BBB7C /* ListTableViewCell.swift */; };
+		AB7699F32560966B009BBB7C /* ProHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699F22560966B009BBB7C /* ProHelpers.swift */; };
+		AB7699F8256180C0009BBB7C /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699F7256180C0009BBB7C /* UIColor+Colors.swift */; };
+		AB7699FD256181F0009BBB7C /* HAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7699FC256181F0009BBB7C /* HAButton.swift */; };
+		AB769A0325618B6D009BBB7C /* MockProvidersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB769A0225618B6D009BBB7C /* MockProvidersInteractor.swift */; };
+		AB769A0B25618BA2009BBB7C /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB769A0A25618BA2009BBB7C /* MockRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		AB5BCF1A25607F3C00E7624F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB5BCEFB25607F3900E7624F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB5BCF0225607F3900E7624F;
-			remoteInfo = HAProvidersList;
-		};
-		AB5BCF2525607F3C00E7624F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AB5BCEFB25607F3900E7624F /* Project object */;
 			proxyType = 1;
@@ -38,7 +44,7 @@
 		AB5BCF0325607F3900E7624F /* HAProvidersList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAProvidersList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5BCF0625607F3900E7624F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5BCF0825607F3900E7624F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB5BCF0A25607F3900E7624F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB5BCF0A25607F3900E7624F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		AB5BCF0D25607F3900E7624F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB5BCF0F25607F3B00E7624F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB5BCF1225607F3B00E7624F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,9 +52,20 @@
 		AB5BCF1925607F3C00E7624F /* HAProvidersListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAProvidersListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5BCF1D25607F3C00E7624F /* HAProvidersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAProvidersListTests.swift; sourceTree = "<group>"; };
 		AB5BCF1F25607F3C00E7624F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB5BCF2425607F3C00E7624F /* HAProvidersListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAProvidersListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5BCF2825607F3C00E7624F /* HAProvidersListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAProvidersListUITests.swift; sourceTree = "<group>"; };
-		AB5BCF2A25607F3C00E7624F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB5BCF392560802B00E7624F /* pro_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pro_data.json; sourceTree = "<group>"; };
+		AB5BCF3F2560807E00E7624F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AB5BCF452560809900E7624F /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		AB5BCF4A256080A800E7624F /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		AB5BCF4F256080D400E7624F /* ProvidersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersInteractor.swift; sourceTree = "<group>"; };
+		AB5BCF55256080EF00E7624F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AB7699E325608648009BBB7C /* ProResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProResponse.swift; sourceTree = "<group>"; };
+		AB7699E8256087BD009BBB7C /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		AB7699ED25608DB2009BBB7C /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		AB7699F22560966B009BBB7C /* ProHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHelpers.swift; sourceTree = "<group>"; };
+		AB7699F7256180C0009BBB7C /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		AB7699FC256181F0009BBB7C /* HAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAButton.swift; sourceTree = "<group>"; };
+		AB769A0225618B6D009BBB7C /* MockProvidersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProvidersInteractor.swift; sourceTree = "<group>"; };
+		AB769A0A25618BA2009BBB7C /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5BCF2125607F3C00E7624F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +91,6 @@
 			children = (
 				AB5BCF0525607F3900E7624F /* HAProvidersList */,
 				AB5BCF1C25607F3C00E7624F /* HAProvidersListTests */,
-				AB5BCF2725607F3C00E7624F /* HAProvidersListUITests */,
 				AB5BCF0425607F3900E7624F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +100,6 @@
 			children = (
 				AB5BCF0325607F3900E7624F /* HAProvidersList.app */,
 				AB5BCF1925607F3C00E7624F /* HAProvidersListTests.xctest */,
-				AB5BCF2425607F3C00E7624F /* HAProvidersListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +107,19 @@
 		AB5BCF0525607F3900E7624F /* HAProvidersList */ = {
 			isa = PBXGroup;
 			children = (
+				AB5BCF5B256080FF00E7624F /* Entity */,
+				AB5BCF5A256080F400E7624F /* Router */,
+				AB5BCF54256080D900E7624F /* Interactor */,
+				AB5BCF442560808500E7624F /* Presenter */,
+				AB5BCF3E2560806A00E7624F /* View */,
 				AB5BCF0625607F3900E7624F /* AppDelegate.swift */,
 				AB5BCF0825607F3900E7624F /* SceneDelegate.swift */,
-				AB5BCF0A25607F3900E7624F /* ViewController.swift */,
 				AB5BCF0C25607F3900E7624F /* Main.storyboard */,
 				AB5BCF0F25607F3B00E7624F /* Assets.xcassets */,
 				AB5BCF1125607F3B00E7624F /* LaunchScreen.storyboard */,
 				AB5BCF1425607F3B00E7624F /* Info.plist */,
+				AB7699F22560966B009BBB7C /* ProHelpers.swift */,
+				AB7699F7256180C0009BBB7C /* UIColor+Colors.swift */,
 			);
 			path = HAProvidersList;
 			sourceTree = "<group>";
@@ -113,19 +127,66 @@
 		AB5BCF1C25607F3C00E7624F /* HAProvidersListTests */ = {
 			isa = PBXGroup;
 			children = (
+				AB769A0125618B5D009BBB7C /* Mocks */,
 				AB5BCF1D25607F3C00E7624F /* HAProvidersListTests.swift */,
 				AB5BCF1F25607F3C00E7624F /* Info.plist */,
 			);
 			path = HAProvidersListTests;
 			sourceTree = "<group>";
 		};
-		AB5BCF2725607F3C00E7624F /* HAProvidersListUITests */ = {
+		AB5BCF3E2560806A00E7624F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB5BCF2825607F3C00E7624F /* HAProvidersListUITests.swift */,
-				AB5BCF2A25607F3C00E7624F /* Info.plist */,
+				AB5BCF0A25607F3900E7624F /* ListViewController.swift */,
+				AB5BCF3F2560807E00E7624F /* DetailViewController.swift */,
+				AB7699ED25608DB2009BBB7C /* ListTableViewCell.swift */,
+				AB7699FC256181F0009BBB7C /* HAButton.swift */,
 			);
-			path = HAProvidersListUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB5BCF442560808500E7624F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BCF452560809900E7624F /* ListPresenter.swift */,
+				AB5BCF4A256080A800E7624F /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AB5BCF54256080D900E7624F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BCF4F256080D400E7624F /* ProvidersInteractor.swift */,
+				AB7699E8256087BD009BBB7C /* JSONLoader.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AB5BCF5A256080F400E7624F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BCF55256080EF00E7624F /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AB5BCF5B256080FF00E7624F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BCF392560802B00E7624F /* pro_data.json */,
+				AB7699E325608648009BBB7C /* ProResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AB769A0125618B5D009BBB7C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AB769A0225618B6D009BBB7C /* MockProvidersInteractor.swift */,
+				AB769A0A25618BA2009BBB7C /* MockRouter.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +227,6 @@
 			productReference = AB5BCF1925607F3C00E7624F /* HAProvidersListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AB5BCF2325607F3C00E7624F /* HAProvidersListUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB5BCF3325607F3C00E7624F /* Build configuration list for PBXNativeTarget "HAProvidersListUITests" */;
-			buildPhases = (
-				AB5BCF2025607F3C00E7624F /* Sources */,
-				AB5BCF2125607F3C00E7624F /* Frameworks */,
-				AB5BCF2225607F3C00E7624F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB5BCF2625607F3C00E7624F /* PBXTargetDependency */,
-			);
-			name = HAProvidersListUITests;
-			productName = HAProvidersListUITests;
-			productReference = AB5BCF2425607F3C00E7624F /* HAProvidersListUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +240,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					AB5BCF1825607F3C00E7624F = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = AB5BCF0225607F3900E7624F;
-					};
-					AB5BCF2325607F3C00E7624F = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = AB5BCF0225607F3900E7624F;
 					};
@@ -221,7 +260,6 @@
 			targets = (
 				AB5BCF0225607F3900E7624F /* HAProvidersList */,
 				AB5BCF1825607F3C00E7624F /* HAProvidersListTests */,
-				AB5BCF2325607F3C00E7624F /* HAProvidersListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,17 +272,11 @@
 				AB5BCF1325607F3B00E7624F /* LaunchScreen.storyboard in Resources */,
 				AB5BCF1025607F3B00E7624F /* Assets.xcassets in Resources */,
 				AB5BCF0E25607F3900E7624F /* Main.storyboard in Resources */,
+				AB5BCF3A2560802B00E7624F /* pro_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AB5BCF1725607F3C00E7624F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB5BCF2225607F3C00E7624F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5BCF0B25607F3900E7624F /* ViewController.swift in Sources */,
+				AB7699EE25608DB2009BBB7C /* ListTableViewCell.swift in Sources */,
+				AB7699E9256087BD009BBB7C /* JSONLoader.swift in Sources */,
+				AB5BCF56256080EF00E7624F /* Router.swift in Sources */,
+				AB5BCF462560809900E7624F /* ListPresenter.swift in Sources */,
+				AB7699FD256181F0009BBB7C /* HAButton.swift in Sources */,
+				AB5BCF50256080D400E7624F /* ProvidersInteractor.swift in Sources */,
+				AB7699F8256180C0009BBB7C /* UIColor+Colors.swift in Sources */,
+				AB5BCF0B25607F3900E7624F /* ListViewController.swift in Sources */,
 				AB5BCF0725607F3900E7624F /* AppDelegate.swift in Sources */,
+				AB7699F32560966B009BBB7C /* ProHelpers.swift in Sources */,
 				AB5BCF0925607F3900E7624F /* SceneDelegate.swift in Sources */,
+				AB7699E425608648009BBB7C /* ProResponse.swift in Sources */,
+				AB5BCF402560807E00E7624F /* DetailViewController.swift in Sources */,
+				AB5BCF4B256080A800E7624F /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB769A0B25618BA2009BBB7C /* MockRouter.swift in Sources */,
 				AB5BCF1E25607F3C00E7624F /* HAProvidersListTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB5BCF2025607F3C00E7624F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB5BCF2925607F3C00E7624F /* HAProvidersListUITests.swift in Sources */,
+				AB769A0325618B6D009BBB7C /* MockProvidersInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +324,6 @@
 			isa = PBXTargetDependency;
 			target = AB5BCF0225607F3900E7624F /* HAProvidersList */;
 			targetProxy = AB5BCF1A25607F3C00E7624F /* PBXContainerItemProxy */;
-		};
-		AB5BCF2625607F3C00E7624F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB5BCF0225607F3900E7624F /* HAProvidersList */;
-			targetProxy = AB5BCF2525607F3C00E7624F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.HAProvidersList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.HAProvidersList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -513,46 +545,6 @@
 			};
 			name = Release;
 		};
-		AB5BCF3425607F3C00E7624F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDF9Z8ZCX;
-				INFOPLIST_FILE = HAProvidersListUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.HAProvidersListUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HAProvidersList;
-			};
-			name = Debug;
-		};
-		AB5BCF3525607F3C00E7624F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDF9Z8ZCX;
-				INFOPLIST_FILE = HAProvidersListUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.HAProvidersListUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HAProvidersList;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +571,6 @@
 			buildConfigurations = (
 				AB5BCF3125607F3C00E7624F /* Debug */,
 				AB5BCF3225607F3C00E7624F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB5BCF3325607F3C00E7624F /* Build configuration list for PBXNativeTarget "HAProvidersListUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB5BCF3425607F3C00E7624F /* Debug */,
-				AB5BCF3525607F3C00E7624F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

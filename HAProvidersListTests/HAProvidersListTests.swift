@@ -7,27 +7,36 @@
 
 import XCTest
 @testable import HAProvidersList
+import Combine
 
 class HAProvidersListTests: XCTestCase {
+    
+    var listPresenter: ListPresenter!
+    var cancellables: [AnyCancellable] = []
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        self.listPresenter = ListPresenter(interactor: MockProvidersInteractor(), router: MockRouter())
+        self.cancellables = []
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        self.listPresenter = nil
+        self.cancellables = []
     }
+    
+    func testLoadProviders() {
+        let expectation = XCTestExpectation(description: "loading providers")
+        
+        self.listPresenter.proResponse.sink { (response) in
+            guard !response.isEmpty else { return }
+            expectation.fulfill()
+        }.store(in: &self.cancellables)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        self.listPresenter.loadProviders()
+        XCTAssertEqual(3, self.listPresenter.proResponse.value.count)
+        XCTAssertEqual("A company", self.listPresenter.proResponse.value[0].companyName)
+        
+        self.wait(for: [expectation], timeout: 5)
     }
 
 }
